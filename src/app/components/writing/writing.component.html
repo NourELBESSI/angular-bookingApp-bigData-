@@ -1,0 +1,34 @@
+<div class="modal-content">
+    <!--   <div class="modal-header customHeader">
+        <h5 class="modal-title " id="exampleModalLongTitle">Hello again!</h5>
+        <h5>Welcome back, you've been missed</h5>
+    </div>
+
+    -->
+
+    <div class="modal-body">
+        <h5 class="modal-title customtitle" id="exampleModalLongTitle">The space where your thinking takes off! </h5>
+        <h5 class="subtitle">Tell us about what you know</h5>
+        <form [formGroup]="storyForm" (ngSubmit)="onSubmit()">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Title" formControlName='title'
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Description" aria-label="Description"
+                    aria-describedby="basic-addon1" formControlName="description">
+            </div>
+            <div class="input-group mb-3">
+
+                <textarea class="form-control" aria-label="Password" aria-describedby="basic-addon1"
+                    placeholder="Tell your story ..." rows="16" formControlName="text"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-secondary" style="background-color: rebeccapurple;font-size: 13px; border: none; border-color: transparent; margin-left: 38rem;
+                margin-right: 1rem;" (click)="activeModal.close(false)">Close</button>
+            <button type="button" class="btn btn-primary" type="submit"
+                style="background-color: #383141;font-size: 13px; border: none; border-color: transparent;">Publish</button>
+        </form>
+    </div>
+
+</div>

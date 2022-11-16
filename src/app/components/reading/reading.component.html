@@ -1,0 +1,31 @@
+<div class="modal-content">
+    <!--   <div class="modal-header customHeader">
+        <h5 class="modal-title " id="exampleModalLongTitle">Hello again!</h5>
+        <h5>Welcome back, you've been missed</h5>
+    </div>
+
+    -->
+
+    <div class="modal-body">
+        <h5 class="modal-title customtitle" id="exampleModalLongTitle">{{postToShow[0].title}} </h5>
+        <h5 class="subtitle">Tag {{postToShow[0].tag}}</h5>
+
+        <div class="input-group mb-3">
+            <h1 class="subtitle1">{{postToShow[0].description}}</h1>
+        </div>
+        <div class="input-group mb-3">
+            <h2 class="subtitle2">{{postToShow[0].text}}</h2>
+        </div>
+
+
+    </div>
+    <div class="modal-footer customFooter">
+        <button type="button" class="btn btn-secondary"
+            style="background-color: rebeccapurple;font-size: 13px; border: none; border-color: transparent;"
+            (click)="activeModal.close(false)">Close</button>
+        <!--
+        <button type="button" class="btn btn-primary"
+            style="background-color: #383141;font-size: 13px; border: none; border-color: transparent;">Comment</button>
+            -->
+    </div>
+</div>

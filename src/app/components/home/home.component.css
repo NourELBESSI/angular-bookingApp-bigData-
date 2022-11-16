@@ -8,6 +8,8 @@
     opacity: 0.9;
 }
 */
+
+
 .hero {
 
     background-size: cover;
@@ -34,7 +36,7 @@
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: url(../../../assets/img/banner.jpg);
+	background: url(../../../assets/back.jpg);
 	background-size: cover;
 	background-position: center;
 	display: grid;
@@ -82,3 +84,84 @@
 	background: white;
 	transform: scale(1.1);
 }
+.homecontent
+{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+}
+.homecontent h1
+{
+    color: #ffffff;
+    font-size: 50px;
+}
+.homecontent a
+{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:600px)
+{
+    .home img
+{
+    height: 700px;
+}
+    .homecontent h1
+{
+    font-size: 40px;        
+}
+}
+.subtitle{
+    margin-left: -21rem;
+    margin-top: 29px;
+    color: white;
+    font-size: 26px;
+    margin-bottom: 21px;
+}
+.buttons{
+    margin-left: -41rem;
+    margin-top: 18px;
+}
+
+
+/*
+.home img
+{
+    width: 100%;
+    height: auto;
+    object-position: center;
+    object-fit: cover;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.homecontent
+{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+}
+.homecontent h1
+{
+    color: #ffffff;
+    font-size: 50px;
+}
+.homecontent a
+{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:600px)
+{
+    .home img
+{
+    height: 700px;
+}
+    .homecontent h1
+{
+    font-size: 40px;        
+}
+}
+
+*/
