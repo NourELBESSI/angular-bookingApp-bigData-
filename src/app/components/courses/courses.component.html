@@ -1,13 +1,21 @@
 <section class="course">
     <div class="container">
         <h1 class="text-center title">Every tutorial needs to be shared</h1>
-            <div class="col-lg-20 mb-5" *ngFor="let cs of courses;let last= last">
-                <div class="box shadow-sm">
-                    <h4 class="mt-2">{{cs.title}}</h4>
-                    <h5 class="mt-2">{{cs.tutorialType}}</h5>
-                    <p clas="mt-2">{{cs.content}}</p>
-                    <div class="line" *ngIf="!last"></div>
-                </div>
+        <div class="col-lg-20 mb-5" *ngFor="let cs of courses2;let last= last">
+            <div class="box shadow-sm">
+                <h4 class="mt-2">{{cs.title}}</h4>
+                <h5 class="mt-2">{{cs.tutorialType}}</h5>
+                <p clas="mt-2">{{cs.content}}</p>
+                <div class="line" *ngIf="!last"></div>
             </div>
+        </div>
+        <div class="col-lg-20 mb-5" *ngFor="let cs of courses;let last= last">
+            <div class="box shadow-sm">
+                <h4 class="mt-2">{{cs.title}}</h4>
+                <h5 class="mt-2">{{cs.tutorialType}}</h5>
+                <p clas="mt-2">{{cs.content}}</p>
+                <div class="line" *ngIf="!last"></div>
+            </div>
+        </div>
     </div>
 </section>
